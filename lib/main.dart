@@ -8,11 +8,11 @@ import 'core/services/api_client.dart';
 import 'core/services/connectivity_service.dart';
 import 'core/services/request_queue_service.dart';
 import 'login/login_page.dart';
-import 'apps/app1/app1_main.dart';
+import 'apps/apliplast/apliplast_main.dart';
 import 'settings/views/settings_page.dart';
 
-// Importar la función para obtener las rutas de app1
-import 'apps/app1/app1_main.dart' show getApp1Pages;
+
+import 'apps/apliplast/apliplast_main.dart' show getRoutesApiplast;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -41,13 +41,10 @@ class MyApp extends StatelessWidget {
       }),
       initialRoute: '/',
       getPages: [
-        GetPage(name: '/', page: () => App1Main()),
-       // GetPage(name: '/', page: () => AuthWrapper()),
+        GetPage(name: '/', page: () => AuthWrapper()),
         GetPage(name: '/login', page: () => LoginPage()),
         GetPage(name: '/settings', page: () => SettingsPage()),
-        ...getApp1Pages(),
-        // Registrar las rutas de app2 (si las hubiera)
-        // ...getApp2Pages(),
+        ...getRoutesApiplast(),
       ],
     );
   }

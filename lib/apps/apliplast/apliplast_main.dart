@@ -68,10 +68,10 @@ class _App1MainState extends State<App1Main> {
 }
 
 // Función para registrar las rutas específicas de app1
-List<GetPage> getApp1Pages() {
+List<GetPage> getRoutesApiplast() {
   return [
-    GetPage(name: '/app1', page: () => App1Main()),
-    GetPage(name: '/app1/products', page: () => ProductListPage()),
-    GetPage(name: '/mqtt-settings', page: () => MqttSettingsPage()), // Ruta para configuración MQTT
+    GetPage(name: '/apliplast', page: () => App1Main()),
+    GetPage(name: '/apliplast/products', page: () => ProductListPage()),
+    GetPage(name: '/mqtt-settings', page: () => MqttSettingsPage()),
   ];
 }
