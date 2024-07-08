@@ -3,15 +3,14 @@ import 'package:flutter/material.dart';
 final ThemeData appTheme = ThemeData(
   primarySwatch: Colors.blue,
   primaryColor: Colors.blue,
-  backgroundColor: Colors.white,
   scaffoldBackgroundColor: Colors.white,
   textTheme: TextTheme(
-    headline1: TextStyle(
+    displayLarge: TextStyle(
         fontSize: 32.0, fontWeight: FontWeight.bold, color: Colors.black),
-    headline2: TextStyle(
+    displayMedium: TextStyle(
         fontSize: 28.0, fontWeight: FontWeight.bold, color: Colors.black),
-    bodyText1: TextStyle(fontSize: 16.0, color: Colors.black),
-    bodyText2: TextStyle(fontSize: 14.0, color: Colors.black54),
+    bodyLarge: TextStyle(fontSize: 16.0, color: Colors.black),
+    bodyMedium: TextStyle(fontSize: 14.0, color: Colors.black54),
   ),
   buttonTheme: ButtonThemeData(
     buttonColor: Colors.blue,
@@ -36,15 +35,14 @@ final ThemeData darkTheme = ThemeData(
   brightness: Brightness.dark,
   primarySwatch: Colors.blueGrey,
   primaryColor: Colors.blueGrey,
-  backgroundColor: Colors.black,
   scaffoldBackgroundColor: Colors.black,
   textTheme: TextTheme(
-    headline1: TextStyle(
+    displayLarge: TextStyle(
         fontSize: 32.0, fontWeight: FontWeight.bold, color: Colors.white),
-    headline2: TextStyle(
+    displayMedium: TextStyle(
         fontSize: 28.0, fontWeight: FontWeight.bold, color: Colors.white),
-    bodyText1: TextStyle(fontSize: 16.0, color: Colors.white),
-    bodyText2: TextStyle(fontSize: 14.0, color: Colors.white70),
+    bodyLarge: TextStyle(fontSize: 16.0, color: Colors.white),
+    bodyMedium: TextStyle(fontSize: 14.0, color: Colors.white70),
   ),
   buttonTheme: ButtonThemeData(
     buttonColor: Colors.blueGrey,

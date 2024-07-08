@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sens/apps/app1/controllers/Register_controller.dart';
-import 'package:sens/apps/app1/ui/pages/ExtrusionReport/whidget/logo.dart';
+import 'package:sens/apps/app1/views/extrusion_peport/whidget/logo.dart';
 
 class RegisterPage extends StatelessWidget {
   static String id = 'login_page';

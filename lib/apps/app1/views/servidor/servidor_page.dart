@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sens/apps/app1/ui/pages/ExtrusionReport/whidget/logo.dart';
-import 'package:sens/apps/app1/ui/pages/ExtrusionReport/whidget/button_general.dart';
+import 'package:sens/apps/app1/views/extrusion_peport/whidget/logo.dart';
+import 'package:sens/apps/app1/views/extrusion_peport/whidget/button_general.dart';
 
 class ServidorPage extends StatelessWidget {
   @override

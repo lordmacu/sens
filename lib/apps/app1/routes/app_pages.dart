@@ -9,14 +9,14 @@ import 'package:sens/apps/app1/bindings/printReport_binding.dart';
 import 'package:sens/apps/app1/bindings/register_binding.dart';
 import 'package:sens/apps/app1/bindings/semiya_bindin.dart';
 import 'package:sens/apps/app1/bindings/servidor_binding.dart';
-import 'package:sens/apps/app1/ui/pages/ExtrusionReport/Extrusion_page.dart';
-import 'package:sens/apps/app1/ui/pages/gatepage/gate_page.dart';
-import 'package:sens/apps/app1/ui/pages/oderSealed/oder_sealed_page.dart';
-import 'package:sens/apps/app1/ui/pages/orderProduction/order_production_page.dart';
-import 'package:sens/apps/app1/ui/pages/printreport/print_report_page.dart';
-import 'package:sens/apps/app1/ui/pages/register/register_page.dart';
-import 'package:sens/apps/app1/ui/pages/semiya/semiya_page.dart';
-import 'package:sens/apps/app1/ui/pages/servidor/servidor_page.dart';
+import 'package:sens/apps/app1/views/extrusion_peport/extrusion_page.dart';
+import 'package:sens/apps/app1/views/gatepage/gate_page.dart';
+import 'package:sens/apps/app1/views/oderSealed/oder_sealed_page.dart';
+import 'package:sens/apps/app1/views/orderProduction/order_production_page.dart';
+import 'package:sens/apps/app1/views/printreport/print_report_page.dart';
+import 'package:sens/apps/app1/views/register/register_page.dart';
+import 'package:sens/apps/app1/views/semiya/semiya_page.dart';
+import 'package:sens/apps/app1/views/servidor/servidor_page.dart';
 
 import 'package:sens/login/login_page.dart';
 

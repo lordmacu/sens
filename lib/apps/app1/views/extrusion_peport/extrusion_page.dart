@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sens/apps/app1/controllers/Gate_controller.dart';
-import 'package:sens/apps/app1/controllers/Gate_controller.dart';
-import 'package:sens/apps/app1/ui/pages/ExtrusionReport/whidget/button_general.dart' as widgets;
-import 'package:sens/apps/app1/ui/pages/ExtrusionReport/whidget/input_text_general.dart' as widgets;
-import 'package:sens/apps/app1/ui/pages/ExtrusionReport/whidget/dropdown_text.dart' as widgets;
-import 'package:sens/apps/app1/ui/pages/ExtrusionReport/whidget/label_and_input.dart';
+import 'package:sens/apps/app1/views/extrusion_peport/whidget/button_general.dart' as widgets;
+import 'package:sens/apps/app1/views/extrusion_peport/whidget/input_text_general.dart' as widgets;
+import 'package:sens/apps/app1/views/extrusion_peport/whidget/dropdown_text.dart' as widgets;
+import 'package:sens/apps/app1/views/extrusion_peport/whidget/label_and_input.dart';
 
 class ExtrusionReport extends GetView<GateController> {
   @override

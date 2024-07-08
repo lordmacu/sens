@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
-import 'package:untitled3/app/controllers/printJobOrder_controller.dart';
+import 'package:sens/apps/app1/controllers/PrintJobOrder_controller.dart';
+
 
 class PrintJobOrderBinding implements Bindings {
 @override

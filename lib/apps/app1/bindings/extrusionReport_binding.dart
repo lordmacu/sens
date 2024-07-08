@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:untitled3/app/controllers/Extrusion_controller.dart';
+import 'package:sens/apps/app1/controllers/Extrusion_controller.dart';
 
 class ExtrusionReportBinding implements Bindings {
 @override

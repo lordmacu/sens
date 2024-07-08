@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:untitled3/app/ui/pages/ExtrusionReport/whidget/button_general.dart' as widgets;
-import 'package:untitled3/app/ui/pages/ExtrusionReport/whidget/input_text_general.dart' as widgets;
-import 'package:untitled3/app/ui/pages/ExtrusionReport/whidget/dropdown_text.dart' as widgets;
+import 'package:sens/apps/app1/views/extrusion_peport/whidget/button_general.dart' as widgets;
+import 'package:sens/apps/app1/views/extrusion_peport/whidget/input_text_general.dart' as widgets;
+import 'package:sens/apps/app1/views/extrusion_peport/whidget/dropdown_text.dart' as widgets;
 
 class SemiyaPage extends StatelessWidget {
   @override

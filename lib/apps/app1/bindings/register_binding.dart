@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
-import 'package:untitled3/app/controllers/register_controller.dart';
+import 'package:sens/apps/app1/controllers/Register_controller.dart';
+
 
 class RegisterBinding implements Bindings {
 @override
