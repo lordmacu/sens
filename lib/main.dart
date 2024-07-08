@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:wakelock/wakelock.dart';
+import 'package:sens/apps/apliplast/ui/pages/impresion/impresion_page.dart';
+ import 'package:wakelock/wakelock.dart';
 import 'core/theme/app_theme.dart';
 import 'core/services/auth_service.dart';
 import 'core/services/api_client.dart';
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
       }),
       initialRoute: '/',
       getPages: [
-        GetPage(name: '/', page: () => AuthWrapper()),
+        GetPage(name: '/', page: () => ViewPage()),
         GetPage(name: '/login', page: () => LoginPage()),
         GetPage(name: '/settings', page: () => SettingsPage()),
         ...getRoutesApiplast(),

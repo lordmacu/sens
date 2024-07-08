@@ -20,6 +20,8 @@ class _App1MainState extends State<App1Main> {
   @override
   void initState() {
     super.initState();
+
+
     Get.lazyPut<ProductService>(() => ProductService());
     Get.lazyPut<ProductListController>(() => ProductListController());
     Get.put(MqttService());
@@ -70,8 +72,10 @@ class _App1MainState extends State<App1Main> {
 // Función para registrar las rutas específicas de app1
 List<GetPage> getRoutesApiplast() {
   return [
-    GetPage(name: '/apliplast', page: () => App1Main()),
-    GetPage(name: '/apliplast/products', page: () => ProductListPage()),
+    GetPage(name: '/app1', page: () => App1Main()),
+    GetPage(name: '/app1/products', page: () => ProductListPage()),
     GetPage(name: '/mqtt-settings', page: () => MqttSettingsPage()),
+
+    // Ruta para configuración MQTT
   ];
 }
