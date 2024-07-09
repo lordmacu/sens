@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/controllers/Login_controller.dart';
+import 'package:sens/apps/apliplast/controllers/login_controller.dart';
 
 
 class LoginBinding implements Bindings {

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/controllers/Extrusion_controller.dart';
+import 'package:sens/apps/apliplast/controllers/extrusion_controller.dart';
 
 class ExtrusionReportBinding implements Bindings {
 @override

@@ -3,19 +3,15 @@ import 'package:flutter/material.dart';
 final ThemeData appTheme = ThemeData(
   primarySwatch: Colors.blue,
   primaryColor: Colors.blue,
-  backgroundColor: Colors.white,
+  colorScheme: ColorScheme.fromSwatch().copyWith(background: Colors.white),
   scaffoldBackgroundColor: Colors.white,
   textTheme: TextTheme(
-    headline1: TextStyle(
+    headlineLarge: TextStyle(
         fontSize: 32.0, fontWeight: FontWeight.bold, color: Colors.black),
-    headline2: TextStyle(
+    headlineMedium: TextStyle(
         fontSize: 28.0, fontWeight: FontWeight.bold, color: Colors.black),
-    bodyText1: TextStyle(fontSize: 16.0, color: Colors.black),
-    bodyText2: TextStyle(fontSize: 14.0, color: Colors.black54),
-  ),
-  buttonTheme: ButtonThemeData(
-    buttonColor: Colors.blue,
-    textTheme: ButtonTextTheme.primary,
+    bodyLarge: TextStyle(fontSize: 16.0, color: Colors.black),
+    bodyMedium: TextStyle(fontSize: 14.0, color: Colors.black54),
   ),
   appBarTheme: AppBarTheme(
     color: Colors.blue,
@@ -30,25 +26,36 @@ final ThemeData appTheme = ThemeData(
     ),
     labelStyle: TextStyle(color: Colors.blue),
   ),
+  textButtonTheme: TextButtonThemeData(
+    style: TextButton.styleFrom(
+      foregroundColor: Colors.blue, // updated from primary
+    ),
+  ),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      backgroundColor: Colors.blue, // updated from primary
+    ),
+  ),
+  outlinedButtonTheme: OutlinedButtonThemeData(
+    style: OutlinedButton.styleFrom(
+      foregroundColor: Colors.blue, // updated from primary
+    ),
+  ),
 );
 
 final ThemeData darkTheme = ThemeData(
   brightness: Brightness.dark,
   primarySwatch: Colors.blueGrey,
   primaryColor: Colors.blueGrey,
-  backgroundColor: Colors.black,
+  colorScheme: ColorScheme.fromSwatch().copyWith(background: Colors.black),
   scaffoldBackgroundColor: Colors.black,
   textTheme: TextTheme(
-    headline1: TextStyle(
+    headlineLarge: TextStyle(
         fontSize: 32.0, fontWeight: FontWeight.bold, color: Colors.white),
-    headline2: TextStyle(
+    headlineMedium: TextStyle(
         fontSize: 28.0, fontWeight: FontWeight.bold, color: Colors.white),
-    bodyText1: TextStyle(fontSize: 16.0, color: Colors.white),
-    bodyText2: TextStyle(fontSize: 14.0, color: Colors.white70),
-  ),
-  buttonTheme: ButtonThemeData(
-    buttonColor: Colors.blueGrey,
-    textTheme: ButtonTextTheme.primary,
+    bodyLarge: TextStyle(fontSize: 16.0, color: Colors.white),
+    bodyMedium: TextStyle(fontSize: 14.0, color: Colors.white70),
   ),
   appBarTheme: AppBarTheme(
     color: Colors.blueGrey,
@@ -62,5 +69,20 @@ final ThemeData darkTheme = ThemeData(
       borderSide: BorderSide(color: Colors.tealAccent),
     ),
     labelStyle: TextStyle(color: Colors.tealAccent),
+  ),
+  textButtonTheme: TextButtonThemeData(
+    style: TextButton.styleFrom(
+      foregroundColor: Colors.blueGrey, // updated from primary
+    ),
+  ),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      backgroundColor: Colors.blueGrey, // updated from primary
+    ),
+  ),
+  outlinedButtonTheme: OutlinedButtonThemeData(
+    style: OutlinedButton.styleFrom(
+      foregroundColor: Colors.blueGrey, // updated from primary
+    ),
   ),
 );

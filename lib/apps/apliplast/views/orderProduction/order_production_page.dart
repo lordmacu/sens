@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/controllers/orderProduction_controller.dart';
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/button_general.dart' as widgets;
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/input_text_general.dart' as widgets;
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/dropdown_text.dart' as widgets;
+import 'package:sens/apps/apliplast/controllers/order_production_controller.dart';
+import 'package:sens/core/components/buttons/button.dart';
+import 'package:sens/core/components/inputs/input_text.dart';
+import 'package:sens/core/components/inputs/dropdown_text.dart';
 
 
 class OrderProductionPage extends GetView<OrderProductionController> {
@@ -179,14 +179,14 @@ class OrderProductionPage extends GetView<OrderProductionController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Cliente'),
+                   InputTextGeneral(text: 'Cliente'),
 
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Código de cliente'),
+                     InputTextGeneral(text: 'Código de cliente'),
                     SizedBox(height: 10),
-                    widgets.inputTextGeneral(text: 'Referencia'),
+                     InputTextGeneral(text: 'Referencia'),
                     SizedBox(height: 10),
-                    widgets.inputTextGeneral(text: 'Código de producto'),
+                     InputTextGeneral(text: 'Código de producto'),
                     SizedBox(height: 20),
                   ],
                 ),
@@ -216,19 +216,19 @@ class OrderProductionPage extends GetView<OrderProductionController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Ancho'),
+                     InputTextGeneral(text: 'Ancho'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Fuelle'),
+                     InputTextGeneral(text: 'Fuelle'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Espesor'),
+                     InputTextGeneral(text: 'Espesor'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Peso probeta'),
+                     InputTextGeneral(text: 'Peso probeta'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Densidad'),
+                     InputTextGeneral(text: 'Densidad'),
                     SizedBox(height: 8),
-                    widgets.dropdownText(items: ['Color ', 'Item 2', 'Item 3']),
+                    dropdownText(items: ['Color ', 'Item 2', 'Item 3']),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Tipo de Extrusión'),
+                     InputTextGeneral(text: 'Tipo de Extrusión'),
                     SizedBox(height: 20),
                   ],
                 ),
@@ -257,17 +257,17 @@ class OrderProductionPage extends GetView<OrderProductionController> {
                             color: Color.fromARGB(255, 11, 19, 68)),
                       ),
                     ),
-                    widgets.inputTextGeneral(text: 'Alta Virgen'),
+                     InputTextGeneral(text: 'Alta Virgen'),
                     SizedBox(height: 10),
-                    widgets.inputTextGeneral(text: 'Lineal'),
+                     InputTextGeneral(text: 'Lineal'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Reprocesado A/D'),
+                     InputTextGeneral(text: 'Reprocesado A/D'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Reprocesado B/D'),
+                     InputTextGeneral(text: 'Reprocesado B/D'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Pigmento Negro'),
+                     InputTextGeneral(text: 'Pigmento Negro'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Total'),
+                     InputTextGeneral(text: 'Total'),
                   ],
                 ),
               ),
@@ -295,17 +295,17 @@ class OrderProductionPage extends GetView<OrderProductionController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Tipo de producto'),
+                     InputTextGeneral(text: 'Tipo de producto'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Peso (KG)'),
+                     InputTextGeneral(text: 'Peso (KG)'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Cantidad solicitada'),
+                     InputTextGeneral(text: 'Cantidad solicitada'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Máquina'),
+                     InputTextGeneral(text: 'Máquina'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Peso del rollo'),
+                     InputTextGeneral(text: 'Peso del rollo'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: '# Rollos'),
+                     InputTextGeneral(text: '# Rollos'),
                     SizedBox(height: 20),
                   ],
                 ),
@@ -358,7 +358,7 @@ class OrderProductionPage extends GetView<OrderProductionController> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   SizedBox(height: 2),
-                  widgets.ButtonGeneral(
+                  ButtonGeneral(
                     text: 'Guardar',
                     colorValue: Color.fromARGB(255, 14, 12, 87),
                     fontSize: 13,

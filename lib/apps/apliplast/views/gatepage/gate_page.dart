@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/controllers/Gate_controller.dart';
+import 'package:sens/apps/apliplast/controllers/gate_controller.dart';
 
 
 

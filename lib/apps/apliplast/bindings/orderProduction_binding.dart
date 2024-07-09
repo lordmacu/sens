@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/controllers/OrderProduction_controller.dart';
+import 'package:sens/apps/apliplast/controllers/order_production_controller.dart';
 
 
 class OrderProductionBinding implements Bindings {

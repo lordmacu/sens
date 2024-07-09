@@ -1,29 +1,12 @@
+// main_login.dart
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/logo.dart';
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/input_general.dart';
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/button_general.dart'; 
-import 'package:sens/apps/apliplast/controllers/Login_controller.dart'; 
-
-class LoginPage extends StatelessWidget {
-  static String id = 'login_page';
-  
-  final LoginController loginController = Get.put(LoginController()); 
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          // Logo
-          Logo(topValue: 40),
-          // Main login
-          MainLogin(),
-        ],
-      ),
-    );
-  }
-}
+import 'package:sens/core/components/buttons/button.dart';
+import 'package:sens/core/components/icons/logo.dart';
+import 'package:sens/core/components/inputs/input_icon.dart';
+import 'package:sens/apps/apliplast/controllers/login_controller.dart';
+import 'package:sens/core/components/inputs/input_text.dart';
 
 class MainLogin extends StatelessWidget {
   const MainLogin({
@@ -57,9 +40,9 @@ class MainLogin extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 32),
-            InputGeneral(icon: Icons.email, text: 'Correo electrónico'),
+            InputGeneral(icon: Icons.email, text: 'Correo electrónico'), // Asegúrate de pasar los parámetros correctos
             const SizedBox(height: 19),
-            InputGeneral(icon: Icons.lock, text: 'Contraseña'),
+            InputGeneral(icon: Icons.lock, text: 'Contraseña'), // Asegúrate de pasar los parámetros correctos
             const SizedBox(height: 15),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -101,23 +84,6 @@ class MainLogin extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'My App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: LoginPage(),
     );
   }
 }

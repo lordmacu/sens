@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:sens/apps/apliplast/controllers/printReport_controller.dart';
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/label_and_input.dart';
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/button_general.dart'
-    as widgets;
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/input_text_general.dart'
-    as widgets;
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/dropdown_text.dart'
-    as widgets;
+
+import 'package:sens/core/components/inputs/label_and_input.dart';
+import 'package:sens/core/components/buttons/button.dart';
+import 'package:sens/core/components/inputs/input_text.dart';
+import 'package:sens/core/components/inputs/dropdown_text.dart';
+  
 
 class PrintReportPage extends GetView<PrintReportController> {
   @override
@@ -149,9 +148,9 @@ class PrintReportPage extends GetView<PrintReportController> {
                       ],
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Turno'),
+                    InputTextGeneral(text: 'Turno'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Maquina '),
+                    InputTextGeneral(text: 'Maquina '),
                     SizedBox(height: 8),
                     Container(
                       width: 380,
@@ -213,7 +212,7 @@ class PrintReportPage extends GetView<PrintReportController> {
                       ),
                     ),
                     SizedBox(height: 20),
-                    widgets.dropdownText(items: ['Color', 'Item 2', 'Item 3']),
+                    dropdownText(items: ['Color', 'Item 2', 'Item 3']),
                   ],
                 ),
               ),
@@ -242,13 +241,13 @@ class PrintReportPage extends GetView<PrintReportController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Maquina'),
+                    InputTextGeneral(text: 'Maquina'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Fuelle'),
+                    InputTextGeneral(text: 'Fuelle'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Color'),
+                    InputTextGeneral(text: 'Color'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'kilo'),
+                    InputTextGeneral(text: 'kilo'),
                     SizedBox(height: 20),
                   ],
                 ),
@@ -306,9 +305,9 @@ class PrintReportPage extends GetView<PrintReportController> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 5),
-                    widgets.inputTextGeneral(text: 'Materia prima utilizada'),
+                    InputTextGeneral(text: 'Materia prima utilizada'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'produccion'),
+                    InputTextGeneral(text: 'produccion'),
                     SizedBox(height: 8),
                     LabelAndInput(
                       label: 'Subtotal',
@@ -384,7 +383,7 @@ class PrintReportPage extends GetView<PrintReportController> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   SizedBox(height: 2),
-                  widgets.ButtonGeneral(
+                  ButtonGeneral(
                     text: 'Guardar',
                     colorValue: Color.fromARGB(255, 14, 12, 87),
                     fontSize: 10,
@@ -424,7 +423,7 @@ class labelAndInput extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: widgets.inputTextGeneral(text: placeholder),
+          child: InputTextGeneral(text: placeholder),
         ),
       ],
     );

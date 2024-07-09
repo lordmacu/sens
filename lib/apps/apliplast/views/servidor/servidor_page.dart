@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/logo.dart';
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/button_general.dart';
+
+import 'package:sens/core/components/buttons/button.dart';
+import 'package:sens/core/components/icons/logo.dart';
+
 
 class ServidorPage extends StatelessWidget {
   @override

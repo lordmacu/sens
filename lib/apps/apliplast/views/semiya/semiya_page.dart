@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/button_general.dart' as widgets;
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/input_text_general.dart' as widgets;
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/dropdown_text.dart' as widgets;
+import 'package:sens/core/components/buttons/button.dart';
+import 'package:sens/core/components/inputs/input_text.dart';
+import 'package:sens/core/components/inputs/dropdown_text.dart';
 
 class SemiyaPage extends StatelessWidget {
   @override
@@ -341,7 +341,7 @@ class SemiyaPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  widgets.ButtonGeneral(
+                  ButtonGeneral(
                     text: 'Enviar',
                     colorValue: Color.fromARGB(255, 13, 139, 128),
                     fontSize: 10,
@@ -350,7 +350,7 @@ class SemiyaPage extends StatelessWidget {
                    // },
                   ),
                   SizedBox(height: 2),
-                  widgets.ButtonGeneral(
+                  ButtonGeneral(
                     text: 'Crear lote',
                     colorValue: Color.fromARGB(255, 14, 12, 87),
                     fontSize: 10,

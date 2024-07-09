@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/controllers/printJobOrder_controller.dart';
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/button_general.dart' as widgets;
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/input_text_general.dart' as widgets;
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/dropdown_text.dart' as widgets;
+import 'package:sens/apps/apliplast/controllers/print_order_controller.dart';
+import 'package:sens/core/components/buttons/button.dart';
+import 'package:sens/core/components/inputs/input_text.dart';
+import 'package:sens/core/components/inputs/dropdown_text.dart';
 
 class PrintJobOrderPage extends GetView<PrintJobOrderController> {
 
@@ -173,11 +173,11 @@ class PrintJobOrderPage extends GetView<PrintJobOrderController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Cliente'),
+                   InputTextGeneral(text: 'Cliente'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Código de cliente'),
+                   InputTextGeneral(text: 'Código de cliente'),
                     SizedBox(height: 10),
-                    widgets.inputTextGeneral(text: 'Referencia'),
+                    InputTextGeneral(text: 'Referencia'),
                     SizedBox(height: 20),
                   ],
                 ),
@@ -207,16 +207,16 @@ class PrintJobOrderPage extends GetView<PrintJobOrderController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Ancho'),
+                     InputTextGeneral(text: 'Ancho'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Fuelle'),
+                     InputTextGeneral(text: 'Fuelle'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Espesor'),
+                     InputTextGeneral(text: 'Espesor'),
                     SizedBox(height: 8),
-                    widgets.dropdownText(
+                    dropdownText(
                         items: ['Densidad', 'Item 2', 'Item 3']),
                     SizedBox(height: 8),
-                    widgets.dropdownText(items: ['Color', 'Item 2', 'Item 3']),
+                    dropdownText(items: ['Color', 'Item 2', 'Item 3']),
                     SizedBox(height: 8),
                     SizedBox(height: 20),
                   ],
@@ -246,25 +246,25 @@ class PrintJobOrderPage extends GetView<PrintJobOrderController> {
                             color: Color.fromARGB(255, 11, 19, 68)),
                       ),
                     ),
-                    widgets.inputTextGeneral(text: 'Ancho'),
+                     InputTextGeneral(text: 'Ancho'),
                     SizedBox(height: 10),
-                    widgets.inputTextGeneral(text: 'Largo'),
+                     InputTextGeneral(text: 'Largo'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Fuelle Lateral'),
+                     InputTextGeneral(text: 'Fuelle Lateral'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Fuelle fondo'),
+                     InputTextGeneral(text: 'Fuelle fondo'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Doble solapa reforzada'),
+                     InputTextGeneral(text: 'Doble solapa reforzada'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Solapa'),
+                     InputTextGeneral(text: 'Solapa'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Lengueta'),
+                     InputTextGeneral(text: 'Lengueta'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Troquel'),
+                     InputTextGeneral(text: 'Troquel'),
                     SizedBox(height: 8),
-                    widgets.dropdownText(items: ['Sellado', 'Item 2', 'Item 3']),
+                    dropdownText(items: ['Sellado', 'Item 2', 'Item 3']),
                     SizedBox(height: 8),
-                    widgets.dropdownText(
+                    dropdownText(
                         items: ['Perforaciones', 'Item 2', 'Item 3']),
                   ],
                 ),
@@ -293,18 +293,18 @@ class PrintJobOrderPage extends GetView<PrintJobOrderController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Peso(KG)'),
+                     InputTextGeneral(text: 'Peso(KG)'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Cantidad solicitada'),
+                     InputTextGeneral(text: 'Cantidad solicitada'),
                     SizedBox(height: 8),
-                    widgets.dropdownText(
+                    dropdownText(
                         items: ['Tipo de producto', 'Item 2', 'Item 3']),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Máquina'),
+                     InputTextGeneral(text: 'Máquina'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Rodillo'),
+                     InputTextGeneral(text: 'Rodillo'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Repeticiones'),
+                     InputTextGeneral(text: 'Repeticiones'),
                     SizedBox(height: 20),
                     Align(
                       alignment: Alignment.centerLeft,
@@ -383,7 +383,7 @@ class PrintJobOrderPage extends GetView<PrintJobOrderController> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   SizedBox(height: 2),
-                  widgets.ButtonGeneral(
+                ButtonGeneral(
                     text: 'Guardar',
                     colorValue: Color.fromARGB(255, 14, 12, 87),
                     fontSize: 15,

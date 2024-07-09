@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/controllers/Home_controller.dart';
+import 'package:sens/apps/apliplast/controllers/home_controller.dart';
 
 
 class HomeBinding implements Bindings {

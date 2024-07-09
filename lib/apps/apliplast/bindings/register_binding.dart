@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:sens/apps/apliplast/controllers/Register_controller.dart';
+import 'package:sens/apps/apliplast/controllers/register_controller.dart';
 
 
 class RegisterBinding implements Bindings {

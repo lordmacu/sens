@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:sens/apps/apliplast/controllers/oderSealed_controller.dart';
-
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/button_general.dart' as widgets;
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/input_text_general.dart' as widgets;
-import 'package:sens/apps/apliplast/views/extrusion_peport/whidget/dropdown_text.dart' as widgets;
+import 'package:sens/core/components/buttons/button.dart';
+import 'package:sens/core/components/inputs/input_text.dart';
+import 'package:sens/core/components/inputs/dropdown_text.dart';
 
 class OrderSealedPage extends GetView<OderSealedController> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -173,11 +171,11 @@ class OrderSealedPage extends GetView<OderSealedController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Cliente'),
+                    InputTextGeneral(text: 'Cliente'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Código de cliente'),
+                    InputTextGeneral(text: 'Código de cliente'),
                     SizedBox(height: 10),
-                    widgets.inputTextGeneral(text: 'Referencia'),
+                    InputTextGeneral(text: 'Referencia'),
                     SizedBox(height: 10),
                   ],
                 ),
@@ -207,18 +205,17 @@ class OrderSealedPage extends GetView<OderSealedController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Peso (KG)'),
+                    InputTextGeneral(text: 'Peso (KG)'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Cantidad solicitada'),
+                    InputTextGeneral(text: 'Cantidad solicitada'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Cantidad solicitada'),
+                    InputTextGeneral(text: 'Cantidad solicitada'),
                     SizedBox(height: 8),
-                    widgets.dropdownText(
-                        items: ['Tipo de producto', 'Item 2', 'Item 3']),
+                  dropdownText(items: ['Tipo de producto', 'Item 2', 'Item 3']),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Máquina'),
+                    InputTextGeneral(text: 'Máquina'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: '# Bultos'),
+                    InputTextGeneral(text: '# Bultos'),
                     SizedBox(height: 20),
                   ],
                 ),
@@ -248,16 +245,15 @@ class OrderSealedPage extends GetView<OderSealedController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Ancho'),
+                    InputTextGeneral(text: 'Ancho'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Fuelle'),
+                    InputTextGeneral(text: 'Fuelle'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Espesor'),
+                    InputTextGeneral(text: 'Espesor'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Densidad'),
+                    InputTextGeneral(text: 'Densidad'),
                     SizedBox(height: 8),
-                    widgets
-                        .dropdownText(items: ['Color', 'Color 2', 'Color 3']),
+                    dropdownText(items: ['Color', 'Color 2', 'Color 3']),
                     SizedBox(height: 20),
                   ],
                 ),
@@ -286,26 +282,25 @@ class OrderSealedPage extends GetView<OderSealedController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Ancho'),
+                    InputTextGeneral(text: 'Ancho'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Largo'),
+                    InputTextGeneral(text: 'Largo'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Fuelle lateral'),
+                    InputTextGeneral(text: 'Fuelle lateral'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Fuelle fondo'),
+                    InputTextGeneral(text: 'Fuelle fondo'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Doble solapa reforzada'),
+                    InputTextGeneral(text: 'Doble solapa reforzada'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Solapa'),
+                    InputTextGeneral(text: 'Solapa'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Lengüeta'),
+                    InputTextGeneral(text: 'Lengüeta'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Troquel'),
+                    InputTextGeneral(text: 'Troquel'),
                     SizedBox(height: 8),
-                    widgets.dropdownText(
-                        items: ['Sellado', 'Sellado 2', 'Sellado 3']),
+                    dropdownText(items: ['Sellado', 'Sellado 2', 'Sellado 3']),
                     SizedBox(height: 8),
-                    widgets.dropdownText(items: [
+                    dropdownText(items: [
                       'Perforaciones',
                       'Perforaciones 2',
                       'Perforaciones 3'
@@ -338,23 +333,23 @@ class OrderSealedPage extends GetView<OderSealedController> {
                       ),
                     ),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Peso por bulto (Kg)'),
+                    InputTextGeneral(text: 'Peso por bulto (Kg)'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Fundas por bulto'),
+                    InputTextGeneral(text: 'Fundas por bulto'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Fundas por paquete'),
+                    InputTextGeneral(text: 'Fundas por paquete'),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Paquetes por bulto'),
+                    InputTextGeneral(text: 'Paquetes por bulto'),
                     SizedBox(height: 8),
-                    widgets.dropdownText(items: [
+                    dropdownText(items: [
                       'Tipo de empaque',
                       'Tipo de empaque 2',
                       'Tipo de empaque 3'
                     ]),
                     SizedBox(height: 8),
-                    widgets.inputTextGeneral(text: 'Empaque por pallet'),
+                    InputTextGeneral(text: 'Empaque por pallet'),
                     SizedBox(height: 8),
-                    widgets.dropdownText(items: [
+                    dropdownText(items: [
                       'Tipo de pallet',
                       'Tipo de pallet 2',
                       'Tipo de empaque 3'
@@ -372,7 +367,7 @@ class OrderSealedPage extends GetView<OderSealedController> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   SizedBox(height: 2),
-                  widgets.ButtonGeneral(
+                  ButtonGeneral(
                     text: 'Guardar',
                     colorValue: Color.fromARGB(255, 14, 12, 87),
                     fontSize: 13,
